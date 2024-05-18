@@ -16,7 +16,7 @@ gem 'rails_friends'
 
 After you bundle *RailsFriends*, you need to copy migrations and migrate:
 
-    $ rails has_friendship_engine:install:migrations
+    $ rails rails_friends_engine:install:migrations
     $ rake db:migrate
 
 ## Gem upgrades
