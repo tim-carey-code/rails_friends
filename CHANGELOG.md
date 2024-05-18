@@ -7,6 +7,7 @@
   * `lib/generators/rails_friends`
   * `lib/generators/templates`
   * `lib/generators/install_generator.rb`
+* Fix blocking friends bug(a blocked friend could unblock themselves) 
 
 ## 1.1.8 (2019/09/12)
 * Relax rails dependency ([#78](https://github.com/sungwoncho/has_friendship/pull/78)) [@MaximeD](https://github.com/MaximeD)
