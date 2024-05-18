@@ -77,7 +77,7 @@ module RailsFriends
 
       def block_friend(friend)
         on_relation_with(friend) do |one, other|
-          RailsFriends::Friendship.find_unblocked_friendship(one, other).block!
+          RailsFriends::Friendship.find_unblocked_friendship(one, other).block_by(self)
         end
       end
 
