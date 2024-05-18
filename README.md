@@ -23,7 +23,7 @@ After you bundle *RailsFriends*, you need to copy migrations and migrate:
 
 After gem updates, it may be necessary to run subsequent migrations.
 
-    $ rails rails_friends_engine:install:migrations
+    $ rails generate rails_friends:install
 
 Will install _new_ migrations if they're necessary.
 
