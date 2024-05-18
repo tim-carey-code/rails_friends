@@ -1,11 +1,9 @@
 module RailsFriends
   class Engine < ::Rails::Engine
-    isolate_namespace RailsFriends
-
-    # initializer 'rails_friends.has_friendship' do
-    #   ActiveSupport.on_load(:active_record) do
-    #     include RailsFriends::Friendable
-    #   end
-    # end
+    # Do not isolate namespace to avoid issues
+    initializer 'rails_friends.load_generators' do
+      Rails.application.config.generators.templates << RailsFriends::Engine.root.join('lib', 'generators',
+                                                                                      'rails_friends', 'templates')
+    end
   end
 end

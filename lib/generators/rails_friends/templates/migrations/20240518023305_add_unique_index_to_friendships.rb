@@ -1,10 +1,10 @@
 if ActiveRecord.gem_version >= Gem::Version.new('5.0')
-  class RailsFriends::AddUniqueIndexToFriendships < ActiveRecord::Migration[4.2]; end
+  class AddUniqueIndexToFriendships < ActiveRecord::Migration[4.2]; end
 else
   class AddUniqueIndexToFriendships < ActiveRecord::Migration; end
 end
 
-RailsFriends::AddUniqueIndexToFriendships.class_eval do
+AddUniqueIndexToFriendships.class_eval do
   disable_ddl_transaction!
 
   def self.up

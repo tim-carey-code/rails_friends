@@ -1,16 +1,16 @@
+# frozen_string_literal: true
+
 module RailsFriends
   module Generators
-    class ModelGenerator < Rails::Generators::Base
-      include Rails::Generators::ResourceHelpers
+    class InstallGenerator < Rails::Generators::Base
+      # include Rails::Generators::ResourceHelpers
 
-      # source_root File.expand_path('templates', __dir__)
+      source_root File.expand_path('templates', __dir__)
 
-      def create_migrations
-        rails_command 'railties:install:migrations FROM=rails_friends', inline: true
-      end
+      desc 'Copies the migrations for RailsFriends'
 
-      def done
-        readme 'README' if behavior == :invoke
+      def copy_migrations
+        directory 'migrations', 'db/migrate'
       end
     end
   end
