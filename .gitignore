@@ -1,0 +1,14 @@
+.bundle/
+log/*.log
+pkg/
+spec/internal/db/*.sqlite3
+spec/internal/db/*.sqlite3-journal
+spec/internal/log/*.log
+spec/internal/tmp/
+spec/internal/.sass-cache
+spec/internal/db/migrate/*
+spec/tmp/*
+coverage/
+tmp/
+.DS_STORE
+rails_friends-1.1.8.gem
