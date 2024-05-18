@@ -11,4 +11,5 @@ spec/tmp/*
 coverage/
 tmp/
 .DS_STORE
-rails_friends-1.1.8.gem
+rails_friends-*.gem
+spec/internal/db/test.sqlite3-*
