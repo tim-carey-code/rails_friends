@@ -1,3 +1,13 @@
+## 0.1.0 (2024/05/18)
+* New versioning since I am now maintaining the gem
+* Changed install command to `rails generate rails_friends:install`
+* Added Rails 7 compatibility
+* Made templates for migrations and moved them out of `db/migrate`
+* New folders in `lib`
+  * `lib/generators/rails_friends`
+  * `lib/generators/templates`
+  * `lib/generators/install_generator.rb`
+
 ## 1.1.8 (2019/09/12)
 * Relax rails dependency ([#78](https://github.com/sungwoncho/has_friendship/pull/78)) [@MaximeD](https://github.com/MaximeD)
 * Bump loofah
